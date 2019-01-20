@@ -1,0 +1,35 @@
+body{
+    font-family: 'Cairo', sans-serif;
+    color:black;
+    background:  url("../images/dark-paths.png");
+}
+
+.col-10{
+    margin: 20px 10px
+}
+
+.thisChoice:hover{
+    background-color: dimgray;
+
+}
+    
+.card-header{
+    font-size: 22px;
+    font-weight: 900;
+    text-align: center;
+}
+
+#wrapper{
+    min-height:100%;
+    position:relative;
+}
+footer {
+  position: absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  background: whitesmoke;
+  height:50px;
+}
+
+
