@@ -1,6 +1,8 @@
 var triviaQuestions = [];
 
-// Querying the bandsintown api for the selected artist, the ?app_id parameter is required, but can equal anything
+// Querying the  api for a random question,  
+function getNewSet(){ 
+    triviaQuestions = [];
 var queryURL = "https://opentdb.com/api.php?amount=5&category=17&difficulty=easy&type=multiple"
 $.ajax({
   url: queryURL,
@@ -24,14 +26,16 @@ $.ajax({
         triviaQuestion.answer = correctAnswerIndex;
 
         triviaQuestions.push(triviaQuestion);
+
     }
     
+    newGame();
     
     
 
   
 
-});
+});}
 
 
 function randomImage(tag){
@@ -76,14 +80,14 @@ var messages = {
 //page loads with a start button
 $('#startBtn').on('click', function(){
 	$(this).hide();
-	newGame();
+    getNewSet();
 });
 
 
 //start new game after first 5 questions
 $('#startOverBtn').on('click', function(){
     $(this).hide();
-    newGame();
+    getNewSet();
 });
 
 
