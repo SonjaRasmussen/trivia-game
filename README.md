@@ -1,6 +1,8 @@
 # trivia-game
 Assignment #5 javascript
 
+ https://sonjarasmussen.github.io/trivia-game/
+
 Basics of the Science Trivia Game
 
 One game is 5 questions
